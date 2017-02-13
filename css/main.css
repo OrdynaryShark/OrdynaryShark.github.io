@@ -1,0 +1,22 @@
+html {
+}
+body {
+    margin : 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: block;
+}
+button, button:visited, button:focus, button:active, button:hover {
+    outline:0 none !important;
+    cursor: pointer;
+}
+
+.clear {
+    clear: both;
+}
