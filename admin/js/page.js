@@ -256,7 +256,7 @@ function NewsItemList(){
             var countItem = countObjectProp(objValue);
             for (var key in objValue) {
                 var item = new NewsItem(key, objValue[key]);
-                const itemDom = item.toDomObject();
+                var itemDom = item.toDomObject();
                 var itemImg = itemDom.find("img")[0];
 
                 $(itemImg).on("load",function(){
