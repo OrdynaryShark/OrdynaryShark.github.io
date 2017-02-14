@@ -1,0 +1,66 @@
+body {
+    padding-top: 56px;
+}
+
+
+/*Header*/
+header {
+    width: 100%;
+    background: #2151a4;
+    padding: 11px 0;
+
+    position: fixed;
+    top: 0;
+
+    z-index: 10;
+
+    -webkit-box-shadow: 0 3px 4px 0 rgba(0,0,0,0.14), 0 3px 3px -2px rgba(0,0,0,0.12), 0 1px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 3px 4px 0 rgba(0,0,0,0.14), 0 3px 3px -2px rgba(0,0,0,0.12), 0 1px 8px 0 rgba(0,0,0,0.2);
+}
+
+.left-menu {
+    float: left;
+    margin-left: 10px;
+}
+.left-menu .logo {
+    vertical-align: middle;
+    margin: 6px 0;
+}
+.left-menu .small-logo {
+    display: none;
+}
+
+.right-menu {
+    float: right;
+    margin-right: 10px;
+}
+.right-menu .header-menu {
+    margin: 5px 0;
+}
+.right-menu .header-menu a {
+    color: #b7cbff;
+    text-decoration: none;
+    margin: 5px;
+}
+.right-menu .header-menu a:hover {
+    color: #2196F3;
+}
+.right-menu .header-menu-open {
+    display: none;
+    border: none;
+    background: transparent;
+    color: #b7cbff;
+}
+.right-menu .header-menu-open:hover {
+    color: #2196F3;
+}
+
+@media screen and (max-width: 550px) {
+    .right-menu .header-menu { display: none }
+    .right-menu .header-menu-open {display: initial}
+}
+@media screen and (max-width: 280px) {
+    .left-menu .big-logo {display: none;}
+    .left-menu .small-logo {display: initial;}
+}
+/*--Header--*/

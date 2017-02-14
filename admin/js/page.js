@@ -256,11 +256,12 @@ function NewsItemList(){
             var countItem = countObjectProp(objValue);
             for (var key in objValue) {
                 var item = new NewsItem(key, objValue[key]);
-                var itemDom = item.toDomObject();
+                let itemDom = item.toDomObject();
                 var itemImg = itemDom.find("img")[0];
 
                 $(itemImg).on("load",function(){
                     loadedItemCount++;
+                    itemDom.fadeIn();
                     if (loadedItemCount == countItem){
                         jQuery.mansory = onMansory();
                     }
