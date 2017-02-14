@@ -66,14 +66,13 @@
       <file leaf-file-name="page.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/js/page.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="258" column="19" lean-forward="false" selection-start-line="258" selection-start-column="19" selection-end-line="258" selection-end-column="19" />
+            <state relative-caret-position="201">
+              <caret line="227" column="9" lean-forward="false" selection-start-line="227" selection-start-column="9" selection-end-line="227" selection-end-column="9" />
               <folding>
                 <element signature="n#!!block;n#openNavMenu#0" expanded="false" />
                 <element signature="n#!!block;n#hideNavMenu#0" expanded="false" />
                 <element signature="n#!!block;n#setPageName#0" expanded="false" />
                 <element signature="n#!!block;n#openAddForm#0" expanded="false" />
-                <element signature="n#!!block;n#NewsItem#0" expanded="false" />
                 <element signature="e#3369#3503#0" expanded="false" />
                 <element signature="e#3542#3678#0" expanded="false" />
                 <element signature="e#3717#3881#0" expanded="false" />
@@ -84,7 +83,6 @@
                 <element signature="e#4967#5007#0" expanded="false" />
                 <element signature="e#5045#5088#0" expanded="false" />
                 <element signature="e#5121#5404#0" expanded="false" />
-                <element signature="e#5440#6601#0" expanded="false" />
                 <element signature="n#!!block;n#NewsAddForm#0" expanded="false" />
                 <element signature="n#!!block;n#init#0;n#!!block;n#NewsAddForm#0" expanded="false" />
                 <element signature="n#!!block;n#updateMainImage#0;n#!!block;n#NewsAddForm#0" expanded="false" />
@@ -123,6 +121,7 @@
     <findStrings>
       <find>console</find>
       <find>addIte</find>
+      <find>arpho</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -397,7 +396,7 @@
       <workItem from="1486950925448" duration="563000" />
       <workItem from="1486993652572" duration="1083000" />
       <workItem from="1486994790792" duration="40645000" />
-      <workItem from="1487051127599" duration="15648000" />
+      <workItem from="1487051127599" duration="15828000" />
     </task>
     <task id="LOCAL-00001" summary="Correct path">
       <created>1486951040872</created>
@@ -410,7 +409,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92927000" />
+    <option name="totallyTimeSpent" value="93107000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="784" extended-state="6" />
@@ -532,7 +531,6 @@
             <element signature="n#!!block;n#hideNavMenu#0" expanded="false" />
             <element signature="n#!!block;n#setPageName#0" expanded="false" />
             <element signature="n#!!block;n#openAddForm#0" expanded="false" />
-            <element signature="n#!!block;n#NewsItem#0" expanded="false" />
             <element signature="e#3369#3503#0" expanded="false" />
             <element signature="e#3542#3678#0" expanded="false" />
             <element signature="e#3717#3881#0" expanded="false" />
@@ -543,7 +541,6 @@
             <element signature="e#4967#5007#0" expanded="false" />
             <element signature="e#5045#5088#0" expanded="false" />
             <element signature="e#5121#5404#0" expanded="false" />
-            <element signature="e#5440#6601#0" expanded="false" />
             <element signature="n#!!block;n#NewsAddForm#0" expanded="false" />
             <element signature="n#!!block;n#init#0;n#!!block;n#NewsAddForm#0" expanded="false" />
             <element signature="n#!!block;n#updateMainImage#0;n#!!block;n#NewsAddForm#0" expanded="false" />
@@ -1170,14 +1167,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/js/page.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="258" column="19" lean-forward="false" selection-start-line="258" selection-start-column="19" selection-end-line="258" selection-end-column="19" />
+        <state relative-caret-position="201">
+          <caret line="227" column="9" lean-forward="false" selection-start-line="227" selection-start-column="9" selection-end-line="227" selection-end-column="9" />
           <folding>
             <element signature="n#!!block;n#openNavMenu#0" expanded="false" />
             <element signature="n#!!block;n#hideNavMenu#0" expanded="false" />
             <element signature="n#!!block;n#setPageName#0" expanded="false" />
             <element signature="n#!!block;n#openAddForm#0" expanded="false" />
-            <element signature="n#!!block;n#NewsItem#0" expanded="false" />
             <element signature="e#3369#3503#0" expanded="false" />
             <element signature="e#3542#3678#0" expanded="false" />
             <element signature="e#3717#3881#0" expanded="false" />
@@ -1188,7 +1184,6 @@
             <element signature="e#4967#5007#0" expanded="false" />
             <element signature="e#5045#5088#0" expanded="false" />
             <element signature="e#5121#5404#0" expanded="false" />
-            <element signature="e#5440#6601#0" expanded="false" />
             <element signature="n#!!block;n#NewsAddForm#0" expanded="false" />
             <element signature="n#!!block;n#init#0;n#!!block;n#NewsAddForm#0" expanded="false" />
             <element signature="n#!!block;n#updateMainImage#0;n#!!block;n#NewsAddForm#0" expanded="false" />

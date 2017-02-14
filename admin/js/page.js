@@ -219,10 +219,13 @@ function NewsItem(id, data){
     }
     this.toDomObject = function () {
 
+
         var photoWrapp = $("<div/>").addClass("photo-files");
-        arPhoto.forEach(function(item){
-            photoWrapp.append($("<div/>").addClass("photo-item").css({backgroundImage: "url('" + item + "')"}));
-        });
+        if (arPhoto){
+            arPhoto.forEach(function(item){
+                photoWrapp.append($("<div/>").addClass("photo-item").css({backgroundImage: "url('" + item + "')"}));
+            });
+        }
         photoWrapp.append("<div class = 'clear'></div>");
 
         var result = $("<div/>").addClass("news-item item");
