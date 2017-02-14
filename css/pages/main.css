@@ -64,3 +64,52 @@ header {
     .left-menu .small-logo {display: initial;}
 }
 /*--Header--*/
+/*Main banner*/
+.main-banner {
+    background: url('/OrdynaryShark.github.io/images/autodesk-design-review-2016-banner-1920x373.jpg') no-repeat center;
+    background-size: cover;
+    padding: 40px 0;
+}
+.main-banner .autodesk-logo {
+    background: url('/OrdynaryShark.github.io/images/Autodesk_Logo.svg');
+    padding-top: 53px;
+    width: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: 21px;
+    font-weight: bold;
+    margin: 0 40px;
+}
+.section {
+    padding: 10px;
+    max-width: 800px;
+    margin: 40px auto;
+}
+.product-preview {
+    width: 100%;
+}
+.product-log {
+    padding: 40px;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.product-log.item_1 {
+     background-image: url("/OrdynaryShark.github.io/images/product_logo/3ds-max-logo.png");
+ }
+.product-log.item_2 {
+     background-image: url("/OrdynaryShark.github.io/images/product_logo/maya-logo.png");
+ }
+.product-log.item_3 {
+     background-image: url("/OrdynaryShark.github.io/images/product_logo/autocad-logo.png");
+ }
+@media screen and (max-width: 380px) {
+    .main-banner .autodesk-logo {
+        width: 90%;
+        margin: auto;
+        line-height: 22px;
+    }
+}
+
+/*--Main banner--*/

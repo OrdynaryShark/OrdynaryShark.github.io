@@ -3,13 +3,13 @@
  */
 
 $(document).ready(function(){
-    var oViewer;
+    /*var oViewer;
     var options = {
         env: 'AutodeskProduction',
         accessToken: '2jLGiT3syn7nAUHYo4lNJ7SfZXAd',
         document : "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bW9kZWwyMDE3LTAyLTE0LTA4LTM5LTIxLTJqbGdpdDNzeW43bmF1aHlvNGxuajdzZnp4YWQvUm9ib3RBcm0uZHdmeA"
     };
-    
+
     oViewer =new Autodesk.Viewing.Private.GuiViewer3D ($("#main_viewer") [0], {}) ; // With toolbar
     Autodesk.Viewing.Initializer (options, function () {
         oViewer.initialize () ;
@@ -71,5 +71,5 @@ $(document).ready(function(){
                 alert("Load Error: " + errorMsg) ;
             }
         ) ;
-    }
+    }*/
 });
