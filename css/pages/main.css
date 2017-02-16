@@ -68,7 +68,6 @@ header {
 .main-banner {
     background: url('/OrdynaryShark.github.io/images/autodesk-design-review-2016-banner-1920x373.jpg') no-repeat center;
     background-size: cover;
-    padding: 40px 0;
 }
 .main-banner .autodesk-logo {
     background: url('/OrdynaryShark.github.io/images/Autodesk_Logo.svg');
@@ -79,30 +78,50 @@ header {
     text-align: center;
     font-size: 21px;
     font-weight: bold;
-    margin: 0 40px;
+    margin: 40px;
+    float: left;
+}
+.about-us {
+    padding: 40px 0;
+    -webkit-box-shadow: 0 0px 4px 0 rgba(0,0,0,0.14), 0 0px 3px -2px rgba(0,0,0,0.12), 0 0px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 0px 4px 0 rgba(0,0,0,0.14), 0 0px 3px -2px rgba(0,0,0,0.12), 0 0px 8px 0 rgba(0,0,0,0.2);
 }
 .section {
     padding: 10px;
     max-width: 800px;
-    margin: 40px auto;
+    margin: 0px auto;
+}
+.section-text {
+    background: #F5F5F5;
+    padding: 40px;
 }
 .product-preview {
     width: 100%;
+    text-align: center;
 }
 .product-log {
     padding: 40px;
+    width: 200px;
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: center;
+    cursor: pointer;
+}
+.product-log:hover {
+    box-shadow: 0 5px 7px 1px rgba(66, 66, 66, 0.71);
+    position: relative;
+    top: -5px;
+}
+.product-log:active {
+    box-shadow: 0 2px 4px 1px rgba(66, 66, 66, 0.71);
+    position: relative;
+    top: -2px;
 }
 .product-log.item_1 {
-     background-image: url("/OrdynaryShark.github.io/images/product_logo/3ds-max-logo.png");
  }
 .product-log.item_2 {
-     background-image: url("/OrdynaryShark.github.io/images/product_logo/maya-logo.png");
  }
 .product-log.item_3 {
-     background-image: url("/OrdynaryShark.github.io/images/product_logo/autocad-logo.png");
  }
 @media screen and (max-width: 380px) {
     .main-banner .autodesk-logo {
@@ -113,3 +132,21 @@ header {
 }
 
 /*--Main banner--*/
+#main_viewer_wrap{
+    width: 300px;
+    height: 300px;
+    margin: 40px;
+}
+
+.divider_paralax {
+    height: 100px;
+    width: 100%;
+    background-image: url("../../images/divider_1.jpg");
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.news {
+    height: 100vh;
+}

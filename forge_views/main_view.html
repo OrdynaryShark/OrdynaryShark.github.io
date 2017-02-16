@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="https://developer.api.autodesk.com/viewingservice/v1/viewers/style.min.css?v=2.9.*" type="text/css">
+    <script src="https://developer.api.autodesk.com/viewingservice/v1/viewers/three.min.js?v=2.9.*"></script>
+    <script src="https://developer.api.autodesk.com/viewingservice/v1/viewers/viewer3D.min.js?v=2.9.*"></script>
+</head>
+<body>
+    <div id = "main_viewer"></div>
+</body>
+<style>
+    body {
+        margin: 0;
+    }
+    #main_viewer {
+        width: 300px;
+        height: 300px;
+        background: #2196F3;
+        overflow: hidden;
+    }
+</style>
+<script>
+        var oViewer;
+        var options = {
+            env: 'AutodeskProduction',
+            accessToken: 'pNidgVooK6eTQxfGRYKTdn0cdMWh'
+        };
+        var documentId = "urn:dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bW9kZWwyMDE3LTAyLTE1LTIyLTA0LTQzLXBuaWRndm9vazZldHF4ZmdyeWt0ZG4wY2Rtd2gvQ2hhaXIuZHdn";
+
+        Autodesk.Viewing.Initializer(options, function onInitialized(){
+            Autodesk.Viewing.Document.load(documentId, onDocumentLoadSuccess, onDocumentLoadFailure);
+        });
+
+        /**
+         * Autodesk.Viewing.Document.load() success callback.
+         * Proceeds with model initialization.
+         */
+        function onDocumentLoadSuccess(doc) {
+
+            // A document contains references to 3D and 2D viewables.
+            var viewables = Autodesk.Viewing.Document.getSubItemsWithProperties(doc.getRootItem(), {'type':'geometry'}, true);
+            if (viewables.length === 0) {
+                console.error('Document contains no viewables.');
+                return;
+            }
+
+            // Choose any of the avialble viewables
+            var initialViewable = viewables[0];
+            var svfUrl = doc.getViewablePath(initialViewable);
+            var modelOptions = {
+                sharedPropertyDbPath: doc.getPropertyDbPath()
+            };
+
+            var viewerDiv = document.getElementById('main_viewer');
+            viewer = new Autodesk.Viewing.Viewer3D(viewerDiv);
+
+
+            viewer.initialize();
+            viewer.loadModel(svfUrl, modelOptions, onLoadModelSuccess, onLoadModelError);
+        }
+
+        /**
+         * Autodesk.Viewing.Document.load() failuire callback.
+         */
+        function onDocumentLoadFailure(viewerErrorCode) {
+            console.error('onDocumentLoadFailure() - errorCode:' + viewerErrorCode);
+        }
+
+        /**
+         * viewer.loadModel() success callback.
+         * Invoked after the model's SVF has been initially loaded.
+         * It may trigger before any geometry has been downloaded and displayed on-screen.
+         */
+        function onLoadModelSuccess(model) {
+            viewer.fitToViewport(viewerDiv);
+            console.log('onLoadModelSuccess()!');
+            console.log('Validate model loaded: ' + (viewer.model === model));
+            console.log(model);
+        }
+
+        /**
+         * viewer.loadModel() failure callback.
+         * Invoked when there's an error fetching the SVF file.
+         */
+        function onLoadModelError(viewerErrorCode) {
+            console.error('onLoadModelError() - errorCode:' + viewerErrorCode);
+        }
+</script>
+</html>

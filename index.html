@@ -12,18 +12,14 @@
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="https://developer.api.autodesk.com/viewingservice/v1/viewers/style.min.css?v=2.9.*" type="text/css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
-    <script src="https://developer.api.autodesk.com/viewingservice/v1/viewers/three.min.js?v=2.9.*"></script>
-    <script src="https://developer.api.autodesk.com/viewingservice/v1/viewers/viewer3D.min.js?v=2.9.*"></script>
 
     <script src="js/plugins/masonry.pkgd.min.js" type="text/javascript"></script>
     <script src="js/plugins/jquery.magnific-popup.min.js" type="text/javascript"></script>
 
     <script src="js/main.js" type="text/javascript"></script>
-    <script src="js/pages/main_page.js" type="text/javascript"></script>
 </head>
 <body>
     <header>
@@ -47,26 +43,34 @@
             <div class = "autodesk-logo">
                 <span class = "autodesk-logo-text">Образовательный центр</span>
             </div>
-            <!--<div id = "main_viewer" style="width:468px; height:468px; overflow: hidden;"></div>-->
+            <div class="clear"></div>
         </div>
         <div class = "about-us">
             <div class = "section">
-                <h3>О нас</h3>
                 <div class = "section-text">
                     Наш учебный центр оборудован всем необходимым, чтобы слушатели могли в полной мере <b>обучиться</b> применению программных продуктов компании <b>Autodesk</b>.<br>
                     Так как мы являемся партнером компании, учебный центр каждый год обновляет версии всех программных продуктов, что дает возможность слушателям быть «в тренде» и обучаться использованию именно действующих программ, а не устаревших, и быть конкурентными на рынке труда.
                 </div>
-                <h3>Наши продукты</h3>
-                <table class = "product-preview">
-                    <tr>
-                        <td><div class = "product-log item_1"></div></td>
-                        <td><div class = "product-log item_2"></div></td>
-                        <td><div class = "product-log item_3"></div></td>
-                    </tr>
-                </table>
+                <div id = "divider_1" class = "divider-img"></div>
             </div>
+            <div class = "product-preview">
+                <a href="http://www.autodesk.ru/products/3ds-max/overview" target="_blank">
+                    <img src = "/OrdynaryShark.github.io/images/product_logo/3ds-max-logo.png" class = "product-log item_1">
+                </a>
+                <a href="http://www.autodesk.ru/products/maya/overview" target="_blank">
+                    <img src = "/OrdynaryShark.github.io/images/product_logo/maya-logo.png" class = "product-log item_2">
+                </a>
+                <a href="http://www.autodesk.ru/products/autocad/overview" target="_blank">
+                    <img src = "/OrdynaryShark.github.io/images/product_logo/autocad-logo.png" class = "product-log item_3">
+                </a>
+            </div>
+        </div>
+        <div class = "divider_paralax"></div>
+        <div class = "news">
+
         </div>
     </main>
     <footer></footer>
 </body>
+<script src="js/pages/main_page.js" type="text/javascript"></script>
 </html>
