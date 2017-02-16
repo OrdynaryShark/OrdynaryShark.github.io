@@ -45,6 +45,9 @@ header {
 .right-menu .header-menu a:hover {
     color: #b0daff;
 }
+.right-menu .header-menu li.active a {
+ color: #a51d71;
+}
 .right-menu .header-menu-open {
     display: none;
     border: none;
