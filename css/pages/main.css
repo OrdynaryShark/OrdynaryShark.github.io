@@ -6,8 +6,8 @@ body {
 /*Header*/
 header {
     width: 100%;
-    background: #2151A4;
-    padding: 25px 0;
+    background: #4b5f96;
+    padding: 20px 0;
 
     position: fixed;
     top: 0;
@@ -20,7 +20,7 @@ header {
 
 .left-menu {
     float: left;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 .left-menu .logo {
     vertical-align: middle;
@@ -32,7 +32,7 @@ header {
 
 .right-menu {
     float: right;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 .right-menu .header-menu {
     margin: 5px 0;
@@ -41,6 +41,7 @@ header {
     color: #b7cbff;
     text-decoration: none;
     margin: 5px;
+    vertical-align: middle;
 }
 .right-menu .header-menu a:hover {
     color: #a51d71;
@@ -51,16 +52,17 @@ header {
     border: none;
     background: transparent;
     color: #b7cbff;
+    vertical-align: middle;
 }
 .right-menu .header-menu-open:hover {
     color: #2196F3;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
     .right-menu .header-menu { display: none }
     .right-menu .header-menu-open {display: initial}
 }
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 340px) {
     .left-menu .big-logo {display: none;}
     .left-menu .small-logo {display: initial;}
 }
