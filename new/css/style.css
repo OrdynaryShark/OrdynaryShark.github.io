@@ -15,6 +15,9 @@ body {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+a {
+	font-family: 'Open Sans', sans-serif;
+}
 b-footer-bottom__slogan {
     position: absolute;
     right: 0;
@@ -86,7 +89,7 @@ header.page-header{
 
  
 h1,h2,h3,h4,h5,h6{
-    font-family: 'Muli', sans-serif;
+    font-family: 'open-sans', sans-serif;
     /* font-weight: 700; */
     line-height: 1.2;
     margin-top: 0;
@@ -718,11 +721,11 @@ header.page-header .main-menu{
 	display:inline;
 }
 .main-menu .navbar-nav li a{
-    font-size: 15.5px;
+    font-size: 14px;
     font-weight: 800;
      color: #e0e9ed;
     padding-top: 6px;
-	font: normal normal normal 14px/1 FontAwesome;
+	font-family: 'Open Sans', sans-serif;
     padding-bottom: 0;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
@@ -731,13 +734,11 @@ header.page-header .main-menu{
     transition: all .3s;
     padding: 15px;
     text-transform: uppercase;
-	  text-shadow: 1.5px 1.5px 2px #00BFFF;
 }
 
 .main-menu .navbar-nav li a:hover,
 .main-menu .navbar-nav li.active a{
-    background-color: transparent;
-    color: #fff;
+    color: #a51d71;
   
 	 
 }

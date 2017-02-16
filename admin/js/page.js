@@ -264,7 +264,7 @@ function NewsItemList(){
 
                 $(itemImg).on("load",function(){
                     loadedItemCount++;
-                    itemDom.fadeIn();
+                    //itemDom.fadeIn();
                     if (loadedItemCount == countItem){
                         jQuery.mansory = onMansory();
                     }
