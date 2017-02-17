@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .Kurse-table { 
     padding: 60px 0px;
     background: url(../images/FonCurse.jpg);    
@@ -5,8 +6,36 @@
     margin-left: auto;
     margin-right: auto;
     box-shadow:0 0 0 600px rgba(0, 0, 0, 0.65) inset;
+=======
+/*Список курсов*/
+.Kurse-wrap {
+    background: rgb(33, 81, 164);
+    padding: 29px 0;
 }
+.Kurse-title {
+    max-width: 800px;
+    margin: auto;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+}
+.Kurse-table {
+    padding: 30px 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+}
+.Kerse-table-wrap {
+    float: left;
+>>>>>>> origin/master
+}
+.product-preview {
+    float: right;
+}
+
 .Kurse-text {
+<<<<<<< HEAD
     background-color:white;
     cursor: pointer;
     margin: 10px auto;    
@@ -16,14 +45,58 @@
     border-radius: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
+=======
+    color: #212121;
+    border: 2px solid #ec0b43;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    z-index: 4;
+    background-color: #fff;
+    margin: 15px auto;
+    max-width: 600px;
+    font-size: 24px;
+    padding: 10px 25px;
+    box-shadow: 0 1px 5px black;
+    border-radius: 30px;
+>>>>>>> origin/master
 }
 .Kurse-text:hover {
-    box-shadow: 0 3px 5px 1px rgba(66, 66, 66, 0.71);
+    box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.71);
     position: relative;
     top: -3px;
+    color: #fff;
+    border: 2px solid #fff;
+    background: rgb(236, 11, 67);
 }
 .Kurse-text:active {
-    box-shadow: 0 1px 2px 1px rgba(66, 66, 66, 0.71);
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.71);
     position: relative;
+    border: 2px solid #fff;
     top: -1px;
 }
+
+.product-preview {
+    text-align: center;
+}
+.product-log {
+    background: #fff;
+    padding: 40px;
+    width: 200px;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 20px;
+    margin: 13px 0;
+}
+.product-log:hover {
+    box-shadow: 0 5px 7px 1px rgba(0, 0, 0, 0.71);
+    position: relative;
+    top: -5px;
+}
+.product-log:active {
+    box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.71);
+    position: relative;
+    top: -2px;
+}
+/*Список курсов*/
