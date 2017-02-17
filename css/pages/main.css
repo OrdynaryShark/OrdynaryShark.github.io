@@ -6,8 +6,8 @@ body {
 /*Header*/
 header {
     width: 100%;
-    background: #4b5f96;
-    padding: 5px 0;
+    background: #1e51a4;
+    padding: 12px 0;
 
     position: fixed;
     top: 0;
@@ -68,9 +68,14 @@ header {
 }
 /*--Header--*/
 /*Main banner*/
-.main-banner {
-    background: url('/OrdynaryShark.github.io/images/autodesk-design-review-2016-banner-1920x373.jpg') no-repeat center;
-    background-size: cover;
+.main-banner #fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background: #FAFAFA;
+}
+.main-banner .ifmo-center-text {
+    text-align: center;
+    color: #FFF;
+    z-index: 6;
+    font-size: 30px;
 }
 .main-banner .autodesk-logo {
     background: url('/OrdynaryShark.github.io/images/Autodesk_Logo.svg');
@@ -89,15 +94,34 @@ header {
     -webkit-box-shadow: 0 0px 4px 0 rgba(0,0,0,0.14), 0 0px 3px -2px rgba(0,0,0,0.12), 0 0px 8px 0 rgba(0,0,0,0.2);
     box-shadow: 0 0px 4px 0 rgba(0,0,0,0.14), 0 0px 3px -2px rgba(0,0,0,0.12), 0 0px 8px 0 rgba(0,0,0,0.2);
 }
-.section {
-    padding: 10px;
-    max-width: 800px;
-    margin: 0px auto;
-}
 .section-text {
     background: #F5F5F5;
     padding: 40px;
+    max-width: 600px;
+    margin: auto;
+    -webkit-box-shadow: 0 0px 4px 0 rgba(0,0,0,0.14), 0 0px 3px -2px rgba(0,0,0,0.12), 0 0px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 0px 4px 0 rgba(0,0,0,0.14), 0 0px 3px -2px rgba(0,0,0,0.12), 0 0px 8px 0 rgba(0,0,0,0.2);
 }
+
+.slide {
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 0px 1000px rgba(1, 10, 60, 0.72);
+}
+.slide .dark-layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(7, 3, 35, 0.76);
+    top: 0;
+}
+#main_banner_slide_1 {
+    background-image: url(../../images/banner1.jpg);
+}
+#main_banner_slide_2 {
+    background-image: url(../../images/banner2.jpg);
+}
+
 @media screen and (max-width: 380px) {
     .main-banner .autodesk-logo {
         width: 90%;
@@ -127,18 +151,17 @@ header {
 }
 /*Список курсов*/
 .Kurse-wrap {
-    background: rgb(33, 81, 164);
+    background: #5274cb;
     padding: 32px 0 0px 0;
 }
 .Kurse-title {
     max-width: 800px;
-    margin: auto;
+    margin: 24px auto;
     font-size: 30px;
     color: #fff;
     font-weight: 600;
 }
 .Kurse-table {
-    padding: 30px 0 10px 0;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
