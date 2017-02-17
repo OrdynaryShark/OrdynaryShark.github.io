@@ -8,7 +8,7 @@ $(document).ready(function(){
         scrollBar: true,
         fitToSection: false,
         slidesNavigation: true,
-        fadingEffect: true,
+        fadingEffect: false,
         onLeave: function(index, nextIndex, direction){
             console.log(index, nextIndex, direction);
             if (index == 3 && direction == "down"){
