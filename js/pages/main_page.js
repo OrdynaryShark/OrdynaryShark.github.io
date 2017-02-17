@@ -4,7 +4,7 @@
 
 $(document).ready(function(){
     $("#fullpage").fullpage({
-        autoScrolling: false,
+        autoScrolling: true,
         scrollBar: true,
         fitToSection: false,
         slidesNavigation: true,
