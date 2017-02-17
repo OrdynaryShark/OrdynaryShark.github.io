@@ -204,4 +204,30 @@ header {
     position: relative;
     top: -2px;
 }
-/*Список курсов*/
+.futer {
+    width: 100%;    
+    background-color: #162631;
+    
+}
+.fuiter{
+    color: #fff;
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+@media screen and (max-width: 630px) {
+    .fuiter{
+        width: 100%;
+    }
+}
+.fuiter.right{
+    padding-top: 15px;
+    padding-left: 10px;
+}
+.fuiter.left{
+    text-align: left;
+}
+.textik{
+    text-align: center;
+    color: #666;
+}
