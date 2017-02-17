@@ -146,20 +146,34 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.news {
-    height: 100vh;
+/*Список новостей*/
+.news-item {
+    margin: 20px;
+    width: 320px;
+    box-shadow: 0 0 8px #9E9E9E;
+}
+.news-item .news-img {
+}
+.news-item .news-text-wrap {
+    padding: 10px 0;
+    margin: 0 10px;
+}
+.news-item .news-text {
+    overflow-y: scroll;
+    max-height: 60vh;
 }
 /*Список курсов*/
 .Kurse-wrap {
     background: #5274cb;
-    padding: 32px 0 0px 0;
+    padding: 60px 0;
 }
 .Kurse-title {
     max-width: 800px;
-    margin: 24px auto;
+    margin: 0px auto;
     font-size: 30px;
     color: #fff;
     font-weight: 600;
+    padding-top: 20px;
 }
 .Kurse-table {
     text-align: center;
@@ -169,24 +183,28 @@ header {
 }
 .Kerse-table-wrap {
     float: left;
+    padding: 20px 0px;
 }
 .product-preview {
     float: right;
 }
 
 .Kurse-text {
-    color: #212121;
     border: 2px solid #ec0b43;
     cursor: pointer;
-    font-family: 'Open Sans', sans-serif;
     z-index: 4;
     background-color: #fff;
     margin: 15px auto;
-    max-width: 600px;
-    font-size: 24px;
+    min-width: 400px;
     padding: 10px 25px;
     box-shadow: 0 1px 5px black;
     border-radius: 30px;
+}
+.Kurse-text a {
+    color: #212121;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
 }
 .Kurse-text:hover {
     box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.71);
@@ -195,6 +213,9 @@ header {
     color: #fff;
     border: 2px solid #fff;
     background: rgb(236, 11, 67);
+}
+.Kurse-text:hover a {
+    color: #fff;
 }
 .Kurse-text:active {
     box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.71);
@@ -227,6 +248,17 @@ header {
     position: relative;
     top: -2px;
 }
+@media screen and (max-width: 800px) {
+    .product-preview{
+        width: 100%;
+    }
+    .Kerse-table-wrap {
+        width: 100%;
+    }
+}
+
+
+/*Footer*/
 .futer {
     width: 100%;    
     background-color: #162631;

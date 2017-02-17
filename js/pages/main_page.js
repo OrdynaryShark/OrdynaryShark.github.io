@@ -8,6 +8,14 @@ $(document).ready(function(){
         scrollBar: true,
         fitToSection: false,
         slidesNavigation: true,
-        fadingEffect: true
+        fadingEffect: true,
+        onLeave: function(index, nextIndex, direction){
+            console.log(index, nextIndex, direction);
+            if (index == 3 && direction == "down"){
+                $.fn.fullpage.setAutoScrolling(false);
+                console.log("off");
+            }
+        },
+
     });
 });
