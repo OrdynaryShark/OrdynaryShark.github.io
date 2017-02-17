@@ -8,5 +8,6 @@ $(document).ready(function(){
         scrollBar: true,
         fitToSection: false,
         slidesNavigation: true,
+        fadingEffect: true
     });
 });
