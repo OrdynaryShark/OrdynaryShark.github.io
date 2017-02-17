@@ -147,12 +147,21 @@ header {
     background-size: cover;
 }
 /*Список новостей*/
+.news {
+    max-width: 750px;
+    margin: 60px auto;
+}
 .news-item {
-    margin: 20px;
-    width: 320px;
+    float: left;
+    margin: 10px;
     box-shadow: 0 0 8px #9E9E9E;
+    width: 330px;
+    padding: 10px;
+    border: 2px solid #1e51a4;
+    border-radius: 30px;
 }
 .news-item .news-img {
+    border-radius: 30px;
 }
 .news-item .news-text-wrap {
     padding: 10px 0;
@@ -160,7 +169,7 @@ header {
 }
 .news-item .news-text {
     overflow-y: scroll;
-    max-height: 60vh;
+    max-height: 20vh;
 }
 /*Список курсов*/
 .Kurse-wrap {

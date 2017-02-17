@@ -9,13 +9,5 @@ $(document).ready(function(){
         fitToSection: false,
         slidesNavigation: true,
         fadingEffect: false,
-        onLeave: function(index, nextIndex, direction){
-            console.log(index, nextIndex, direction);
-            if (index == 3 && direction == "down"){
-                $.fn.fullpage.setAutoScrolling(false);
-                console.log("off");
-            }
-        },
-
     });
 });
