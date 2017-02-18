@@ -194,9 +194,6 @@ header {
     float: left;
     padding: 20px 0px;
 }
-.product-preview {
-    float: right;
-}
 
 .Kurse-text {
     border: 2px solid #ec0b43;
@@ -245,7 +242,7 @@ header {
     background-position: center;
     cursor: pointer;
     border-radius: 20px;
-    margin: 13px 0;
+    margin: 13px 10;
 }
 .product-log:hover {
     box-shadow: 0 5px 7px 1px rgba(0, 0, 0, 0.71);
@@ -257,25 +254,17 @@ header {
     position: relative;
     top: -2px;
 }
-@media screen and (max-width: 800px) {
-    .product-preview{
-        width: 100%;
-    }
-    .Kerse-table-wrap {
-        width: 100%;
-    }
-}
 
 
 /*Footer*/
 .futer {
     width: 100%;    
     background-color: #162631;
-    
+    padding: 30px 0;
 }
 .fuiter{
     color: #fff;
-    width: 33%;
+    width: 50%;
     float: left;
     text-align: center;
 }
