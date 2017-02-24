@@ -148,28 +148,65 @@ header {
 }
 /*Список новостей*/
 .news {
-    max-width: 750px;
+    /*max-width: 750px;*/
     margin: 60px auto;
+    min-height: 90vh;
+    width: 100%;
+    overflow: hidden;
+}
+.news ul{
+    /*left: -15vw;*/
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
 }
 .news-item {
-    float: left;
-    margin: 10px;
+    width: 50vw;
+    opacity: 0.7;
+    font-size: 10px;
+
+    vertical-align: middle;
+    text-align: left;
+    display: inline-block;
+    /*margin: 1%;*/
     box-shadow: 0 0 8px #9E9E9E;
-    width: 330px;
-    padding: 10px;
+    /*padding: 10px;*/
     border: 2px solid #1e51a4;
-    border-radius: 30px;
+    border-radius: 5px;
+}
+.news-item .news-img-wrap {
+    width: 30%;
+    margin-right: 10px;
+    float: left;
 }
 .news-item .news-img {
-    border-radius: 30px;
+    border-radius: 2px;
+    max-width: 300px;
 }
 .news-item .news-text-wrap {
+    width: 65%;
     padding: 10px 0;
     margin: 0 10px;
+    float: left;
 }
 .news-item .news-text {
-    overflow-y: scroll;
-    max-height: 20vh;
+    overflow-y: hidden;
+    max-height: 50vh;
+
+}
+.news-item.itemslide-active .news-text {
+    max-height: 80vh;
+
+}
+.news-item.itemslide-active {
+    width: 50vw;
+    opacity: 1;
+    box-shadow: 0 0 3px #9E9E9E;
+    font-size: 14px;
 }
 /*Список курсов*/
 .Kurse-wrap {

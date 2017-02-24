@@ -10,16 +10,20 @@
     <link rel="stylesheet" href="css/plugins/magnific-popup.css">
     <link rel="stylesheet" href="css/plugins/jquery.fullpage.min.css">
 
+    <link rel = "stylesheet" href = "js/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+    <script src="https://itemslide.github.io/dist/itemslide.min.js"></script>
 
     <script src="js/plugins/masonry.pkgd.min.js" type="text/javascript"></script>
     <script src="js/plugins/jquery.magnific-popup.min.js" type="text/javascript"></script>
     <script src="js/plugins/jquery.fullpage.min.js"></script>
+    <script src="js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
 
     <script src="js/main.js" type="text/javascript"></script>
 </head>
@@ -64,69 +68,96 @@
                 </div>
             </div>
         </div>
-        <div class = "news">
-            <div class = "news-item">
-                <div class  = "news-img-wrap">
-                    <img width="100%" src = "images/banner1.jpg" height="auto" class = "news-img">
-                </div>
-                <div class = "news-text-wrap">
-                    <div class = "news-title">
-                        <b>Новость</b>
+        <div  class = "news">
+            <ul id = "news_slider">
+                <li class = "news-item left shown">
+                    <div class  = "news-img-wrap">
+                        <img width="100%" src = "images/banner1.jpg" height="auto" class = "news-img">
                     </div>
-                    <div class = "news-text">
-                        На мероприятии будут отмечались лучшие проекты в следующих номинациях:
-                        - Оригинальное расширение (extension) для Autodesk View and Data API
-                        В данной номинации оценивалось разработанное в рамках хакатона расширение (extension) для Autodesk View and Data API, которое эффективно интегрирует интерактивный просмотр 3D-моделей в веб-приложение для решения некоторой практической задачи.
-                        - Приложение для 3D-моделлера Autodesk Fusion 360
-                        В данной номинации принимали участие приложения для Autodesk Fusion 360, написанные с использованием следующих языков программирования - Python, С++; JavaScript.
-                        Идеи проектов участники предлагали самостоятельно либо брали актуальные задачи, определённые специалистами мероприятия.
-                        Команды формировались участниками самостоятельно до или во время мероприятия. Максимальное количество участников в одной команде – 4 человека.
-                        Главное правило – демонстрация работающего ИТ-прототипа по окончанию мероприятия!
-                        В номинации Оригинальное расширение (extension) для Autodesk View and Data API 1 место заняла команда Университета ИТМО "No stress" в составе: Гордей Евгений, Чапцев Виктор.
-                        В номинации Приложение для 3D-моделлера Autodesk Fusion 360 победила команда Университета ИТМО "PaW" в составе: Романов Владислав, Зуйков Виктор, Кашина Полина, Чесак Александр.
-                        Все участники показали высокий уровень на соревновании!
-                        Команда организаторов желает всем участникам успехов в продвижении и реализации своих идей и проектов!
+                    <div class = "news-text-wrap">
+                        <div class = "news-title">
+                            <b>Новость</b>
+                        </div>
+                        <div class = "news-text">
+                            На мероприятии будут отмечались лучшие проекты в следующих номинациях:
+                            - Оригинальное расширение (extension) для Autodesk View and Data API
+                            В данной номинации оценивалось разработанное в рамках хакатона расширение (extension) для Autodesk View and Data API, которое эффективно интегрирует интерактивный просмотр 3D-моделей в веб-приложение для решения некоторой практической задачи.
+                            - Приложение для 3D-моделлера Autodesk Fusion 360
+                            В данной номинации принимали участие приложения для Autodesk Fusion 360, написанные с использованием следующих языков программирования - Python, С++; JavaScript.
+                            Идеи проектов участники предлагали самостоятельно либо брали актуальные задачи, определённые специалистами мероприятия.
+                            Команды формировались участниками самостоятельно до или во время мероприятия. Максимальное количество участников в одной команде – 4 человека.
+                            Главное правило – демонстрация работающего ИТ-прототипа по окончанию мероприятия!
+                            В номинации Оригинальное расширение (extension) для Autodesk View and Data API 1 место заняла команда Университета ИТМО "No stress" в составе: Гордей Евгений, Чапцев Виктор.
+                            В номинации Приложение для 3D-моделлера Autodesk Fusion 360 победила команда Университета ИТМО "PaW" в составе: Романов Владислав, Зуйков Виктор, Кашина Полина, Чесак Александр.
+                            Все участники показали высокий уровень на соревновании!
+                            Команда организаторов желает всем участникам успехов в продвижении и реализации своих идей и проектов!
+                        </div>
                     </div>
-                </div>
-                <div class = "clear"></div>
-            </div>
-            <div class = "news-item">
-                <div class  = "news-img-wrap">
-                    <img width="100%" src = "images/banner1.jpg" height="auto" class = "news-img">
-                </div>
-                <div class = "news-text-wrap">
-                    <div class = "news-title">
-                        <b>Новость</b>
+                    <div class = "clear"></div>
+                </li>
+                <li class = "news-item center">
+                    <div class  = "news-img-wrap">
+                        <img width="100%" src = "images/banner1.jpg" height="auto" class = "news-img">
                     </div>
-                    <div class = "news-text">
-                        На мероприятии будут отмечались лучшие проекты в следующих номинациях:
-                        - Оригинальное расширение (extension) для Autodesk View and Data API
-                        В данной номинации оценивалось разработанное в рамках хакатона расширение (extension) для Autodesk View and Data API, которое эффективно интегрирует интерактивный просмотр 3D-моделей в веб-приложение для решения некоторой практической задачи.
-                        - Приложение для 3D-моделлера Autodesk Fusion 360
-                        В данной номинации принимали участие приложения для Autodesk Fusion 360, написанные с использованием следующих языков программирования - Python, С++; JavaScript.
-                        Идеи проектов участники предлагали самостоятельно либо брали актуальные задачи, определённые специалистами мероприятия.
-                        Команды формировались участниками самостоятельно до или во время мероприятия. Максимальное количество участников в одной команде – 4 человека.
-                        Главное правило – демонстрация работающего ИТ-прототипа по окончанию мероприятия!
-                        В номинации Оригинальное расширение (extension) для Autodesk View and Data API 1 место заняла команда Университета ИТМО "No stress" в составе: Гордей Евгений, Чапцев Виктор.
-                        В номинации Приложение для 3D-моделлера Autodesk Fusion 360 победила команда Университета ИТМО "PaW" в составе: Романов Владислав, Зуйков Виктор, Кашина Полина, Чесак Александр.
-                        Все участники показали высокий уровень на соревновании!
-                        Команда организаторов желает всем участникам успехов в продвижении и реализации своих идей и проектов!
+                    <div class = "news-text-wrap">
+                        <div class = "news-title">
+                            <b>Новость</b>
+                        </div>
+                        <div class = "news-text">
+                            На мероприятии будут отмечались лучшие проекты в следующих номинациях:
+                            - Оригинальное расширение (extension) для Autodesk View and Data API
+                            В данной номинации оценивалось разработанное в рамках хакатона расширение (extension) для Autodesk View and Data API, которое эффективно интегрирует интерактивный просмотр 3D-моделей в веб-приложение для решения некоторой практической задачи.
+                            - Приложение для 3D-моделлера Autodesk Fusion 360
+                            В данной номинации принимали участие приложения для Autodesk Fusion 360, написанные с использованием следующих языков программирования - Python, С++; JavaScript.
+                            Идеи проектов участники предлагали самостоятельно либо брали актуальные задачи, определённые специалистами мероприятия.
+                            Команды формировались участниками самостоятельно до или во время мероприятия. Максимальное количество участников в одной команде – 4 человека.
+                            Главное правило – демонстрация работающего ИТ-прототипа по окончанию мероприятия!
+                            В номинации Оригинальное расширение (extension) для Autodesk View and Data API 1 место заняла команда Университета ИТМО "No stress" в составе: Гордей Евгений, Чапцев Виктор.
+                            В номинации Приложение для 3D-моделлера Autodesk Fusion 360 победила команда Университета ИТМО "PaW" в составе: Романов Владислав, Зуйков Виктор, Кашина Полина, Чесак Александр.
+                            Все участники показали высокий уровень на соревновании!
+                            Команда организаторов желает всем участникам успехов в продвижении и реализации своих идей и проектов!
+                        </div>
                     </div>
-                </div>
-                <div class = "clear"></div>
-            </div>
+                    <div class = "clear"></div>
+                </li>
+                <li class = "news-item right shown">
+                    <div class  = "news-img-wrap">
+                        <img width="100%" src = "images/banner1.jpg" height="auto" class = "news-img">
+                    </div>
+                    <div class = "news-text-wrap">
+                        <div class = "news-title">
+                            <b>Новость</b>
+                        </div>
+                        <div class = "news-text">
+                            На мероприятии будут отмечались лучшие проекты в следующих номинациях:
+                            - Оригинальное расширение (extension) для Autodesk View and Data API
+                            В данной номинации оценивалось разработанное в рамках хакатона расширение (extension) для Autodesk View and Data API, которое эффективно интегрирует интерактивный просмотр 3D-моделей в веб-приложение для решения некоторой практической задачи.
+                            - Приложение для 3D-моделлера Autodesk Fusion 360
+                            В данной номинации принимали участие приложения для Autodesk Fusion 360, написанные с использованием следующих языков программирования - Python, С++; JavaScript.
+                            Идеи проектов участники предлагали самостоятельно либо брали актуальные задачи, определённые специалистами мероприятия.
+                            Команды формировались участниками самостоятельно до или во время мероприятия. Максимальное количество участников в одной команде – 4 человека.
+                            Главное правило – демонстрация работающего ИТ-прототипа по окончанию мероприятия!
+                            В номинации Оригинальное расширение (extension) для Autodesk View and Data API 1 место заняла команда Университета ИТМО "No stress" в составе: Гордей Евгений, Чапцев Виктор.
+                            В номинации Приложение для 3D-моделлера Autodesk Fusion 360 победила команда Университета ИТМО "PaW" в составе: Романов Владислав, Зуйков Виктор, Кашина Полина, Чесак Александр.
+                            Все участники показали высокий уровень на соревновании!
+                            Команда организаторов желает всем участникам успехов в продвижении и реализации своих идей и проектов!
+                        </div>
+                    </div>
+                    <div class = "clear"></div>
+                </li>
+            </ul>
             <div class = "clear"></div>
         </div>
         <div class = "Kurse-wrap">
             <div class = "product-preview">
                 <a href="http://www.autodesk.ru/products/3ds-max/overview" target="_blank">
-                    <img src = "/OrdynaryShark.github.io/images/product_logo/3ds-max-logo.png" class = "product-log item_1">
+                    <img src = "images/product_logo/3ds-max-logo.png" class = "product-log item_1">
                 </a>
                 <a href="http://www.autodesk.ru/products/maya/overview" target="_blank">
-                    <img src = "/OrdynaryShark.github.io/images/product_logo/maya-logo.png" class = "product-log item_2">
+                    <img src = "images/product_logo/maya-logo.png" class = "product-log item_2">
                 </a>
                 <a href="http://www.autodesk.ru/products/autocad/overview" target="_blank">
-                    <img src = "/OrdynaryShark.github.io/images/product_logo/autocad-logo.png" class = "product-log item_3">
+                    <img src = "images/product_logo/autocad-logo.png" class = "product-log item_3">
                 </a>
             </div>
         </div>
