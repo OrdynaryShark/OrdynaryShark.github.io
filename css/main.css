@@ -26,3 +26,111 @@ button, button:visited, button:focus, button:active, button:hover {
 .clear {
     clear: both;
 }
+/*Header*/
+header {
+    width: 100%;
+    background: #1e51a4;
+    padding: 12px 0;
+
+    position: fixed;
+    top: 0;
+
+    z-index: 10;
+
+    -webkit-box-shadow: 0 3px 4px 0 rgba(0,0,0,0.14), 0 3px 3px -2px rgba(0,0,0,0.12), 0 1px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 3px 4px 0 rgba(0,0,0,0.14), 0 3px 3px -2px rgba(0,0,0,0.12), 0 1px 8px 0 rgba(0,0,0,0.2);
+    color: #FFFFFF;
+}
+.right-menu .header-menu a.selected {
+    color: #FFFFFF;
+}
+.left-menu {
+    float: left;
+    margin-left: 20px;
+}
+.left-menu .logo {
+    vertical-align: middle;
+    margin: 6px 0;
+}
+.left-menu .small-logo {
+    display: none;
+}
+
+.right-menu {
+    float: right;
+    margin-right: 20px;
+}
+.right-menu .header-menu {
+    margin: 5px 0;
+}
+.right-menu .header-menu a {
+    color: #b7cbff;
+    text-decoration: none;
+    margin: 5px;
+    vertical-align: middle;
+}
+.right-menu .header-menu a:hover {
+    color: #a51d71;
+}
+
+.right-menu .header-menu-open {
+    display: none;
+    border: none;
+    background: transparent;
+    color: #b7cbff;
+    vertical-align: middle;
+}
+.right-menu .header-menu-open:hover {
+    color: #2196F3;
+}
+
+@media screen and (max-width: 600px) {
+    .right-menu .header-menu { display: none }
+    .right-menu .header-menu-open {display: initial}
+}
+@media screen and (max-width: 340px) {
+    .left-menu .big-logo {display: none;}
+    .left-menu .small-logo {display: initial;}
+}
+/*--Header--*/
+/*Footer*/
+footer {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 10px;
+}
+.footer-left {
+    float: left;
+    /*text-align: center;*/
+}
+.footer-left img {
+    margin: 10px 0;
+}
+.footer-right {
+    float: right;
+    font-size: 14px;
+    color: #100f11;
+}
+.footer-right .material-icons{
+    vertical-align: middle;
+    width: 30px;
+    padding: 10px 0;
+}
+.footer-text {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: #2A2B32;
+}
+@media screen and (max-width: 600px) {
+    .footer-left {
+        width: 100%;
+        text-align: center;
+    }
+    .footer-right {
+        text-align: center;
+        width: 100%;
+    }
+
+}
+/*--Footer--*/

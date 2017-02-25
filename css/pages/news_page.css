@@ -1,0 +1,117 @@
+/*Main*/
+main {
+    min-height: 100vh;
+    margin-top: 66px;
+}
+.autodesk-logo-line {
+    background: url(/images/home_page_banner2.png) right no-repeat,
+    #f9f9f9;
+    background-size: contain;
+    width: 100%;
+    padding: 10px 0;
+}
+.autodesk-logo {
+    padding: 8px 12px;
+    background: transparent;
+    border: none;
+}
+
+@media screen and (max-width: 460px) {
+    .autodesk-logo-line { background: #f9f9f9; }
+}
+
+.page-wrap {
+    min-height: 100vh;
+    -webkit-box-shadow: 0 -3px 4px 0 rgba(0,0,0,0.14), 0 -3px 3px -2px rgba(0,0,0,0.12), 0 -1px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 -3px 4px 0 rgba(0,0,0,0.14), 0 -3px 3px -2px rgba(0,0,0,0.12), 0 -1px 8px 0 rgba(0,0,0,0.2);
+
+    height: 100%;
+}
+.page-menu {
+    width: 100%;
+    padding: 12px 0;
+
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+
+    color: #ffffff;
+    background: #5274cb;
+}
+.page-menu .page-name {
+    margin: 0 10px;
+}
+
+.container {
+    padding: 10px 0;
+}
+
+/*Item*/
+.item .top {
+    margin-bottom: 10px;
+}
+.item .top .title{
+    font-size: 16px;
+}
+
+.item .middle {
+    min-height: 200px;
+}
+.item .middle .photo-item {
+    width: 100px;
+    height: 100px;
+
+    float: left;
+
+    margin: 0 5px;
+
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.item .middle .photo-preview {
+    margin: 10px 0;
+}
+
+.item .bottom {
+    font-size: 14px;
+}
+.item .bottom .date {
+    float: left;
+}
+.item .bottom .property {
+    padding: 0;
+    border: none;
+    background: #ffffff;
+    float: right;
+}
+
+.item {
+    width: 45%;
+
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 10px;
+
+    box-shadow: 0 0 3px #9E9E9E;
+}
+@media screen and (min-width: 765px) {
+    .container {
+        width: 90%;
+        margin: auto;
+
+        padding: 40px 0;
+    }
+    .item {
+        margin-bottom: 10px;
+
+        position: initial;
+    }
+}
+@media screen and (max-width: 765px) {
+    .item {
+        margin: auto;
+        margin-bottom: 10px;
+        width: 90%;
+    }
+}
+/*--Item--*/

@@ -3,70 +3,6 @@ body {
 }
 
 
-/*Header*/
-header {
-    width: 100%;
-    background: #1e51a4;
-    padding: 12px 0;
-
-    position: fixed;
-    top: 0;
-
-    z-index: 10;
-
-    -webkit-box-shadow: 0 3px 4px 0 rgba(0,0,0,0.14), 0 3px 3px -2px rgba(0,0,0,0.12), 0 1px 8px 0 rgba(0,0,0,0.2);
-    box-shadow: 0 3px 4px 0 rgba(0,0,0,0.14), 0 3px 3px -2px rgba(0,0,0,0.12), 0 1px 8px 0 rgba(0,0,0,0.2);
-}
-
-.left-menu {
-    float: left;
-    margin-left: 20px;
-}
-.left-menu .logo {
-    vertical-align: middle;
-    margin: 6px 0;
-}
-.left-menu .small-logo {
-    display: none;
-}
-
-.right-menu {
-    float: right;
-    margin-right: 20px;
-}
-.right-menu .header-menu {
-    margin: 5px 0;
-}
-.right-menu .header-menu a {
-    color: #b7cbff;
-    text-decoration: none;
-    margin: 5px;
-    vertical-align: middle;
-}
-.right-menu .header-menu a:hover {
-    color: #a51d71;
-}
-
-.right-menu .header-menu-open {
-    display: none;
-    border: none;
-    background: transparent;
-    color: #b7cbff;
-    vertical-align: middle;
-}
-.right-menu .header-menu-open:hover {
-    color: #2196F3;
-}
-
-@media screen and (max-width: 600px) {
-    .right-menu .header-menu { display: none }
-    .right-menu .header-menu-open {display: initial}
-}
-@media screen and (max-width: 340px) {
-    .left-menu .big-logo {display: none;}
-    .left-menu .small-logo {display: initial;}
-}
-/*--Header--*/
 /*Main banner*/
 .main-banner #fp-nav ul li a span, .fp-slidesNav ul li a span {
     background: #FAFAFA;
@@ -149,32 +85,26 @@ header {
 /*Список новостей*/
 .news {
     /*max-width: 750px;*/
-    margin: 60px auto;
+    margin: 0 auto 60px auto;
     min-height: 90vh;
     width: 100%;
     overflow: hidden;
 }
+.news-title {
+    font-weight: bold;
+    font-size: 26px;
+    margin: 30px 1%;
+}
 .news ul{
-    /*left: -15vw;*/
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    -webkit-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    transform-style: preserve-3d;
+    margin: auto;
+    width: 98%;
 }
 .news-item {
     width: 50vw;
-    opacity: 0.7;
-    font-size: 10px;
 
     vertical-align: middle;
     text-align: left;
-    display: inline-block;
-    /*margin: 1%;*/
     box-shadow: 0 0 8px #9E9E9E;
-    /*padding: 10px;*/
     border: 2px solid #1e51a4;
     border-radius: 5px;
 }
@@ -208,6 +138,76 @@ header {
     box-shadow: 0 0 3px #9E9E9E;
     font-size: 14px;
 }
+/*Item*/
+.item .top {
+    margin-bottom: 10px;
+}
+.item .top .title{
+    font-size: 16px;
+}
+
+.item .middle {
+    min-height: 200px;
+}
+.item .middle .photo-item {
+    width: 100px;
+    height: 100px;
+
+    float: left;
+
+    margin: 0 5px;
+
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.item .middle .photo-preview {
+    margin: 10px 0;
+}
+
+.item .bottom {
+    font-size: 14px;
+}
+.item .bottom .date {
+    float: left;
+}
+.item .bottom .property {
+    padding: 0;
+    border: none;
+    background: #ffffff;
+    float: right;
+}
+
+.item {
+    width: 45%;
+
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 10px;
+
+    box-shadow: 0 0 3px #9E9E9E;
+}
+@media screen and (min-width: 765px) {
+    .container {
+        width: 90%;
+        margin: auto;
+
+        padding: 40px 0;
+    }
+    .item {
+        margin-bottom: 10px;
+
+        position: initial;
+    }
+}
+@media screen and (max-width: 765px) {
+    .item {
+        margin: auto;
+        margin-bottom: 10px;
+        width: 90%;
+    }
+}
+/*--Item--*/
 /*Список курсов*/
 .Kurse-wrap {
     background: #5274cb;
@@ -279,7 +279,7 @@ header {
     background-position: center;
     cursor: pointer;
     border-radius: 20px;
-    margin: 13px 10;
+    margin: 13px 10px;
 }
 .product-log:hover {
     box-shadow: 0 5px 7px 1px rgba(0, 0, 0, 0.71);
@@ -292,35 +292,3 @@ header {
     top: -2px;
 }
 
-
-/*Footer*/
-.futer {
-    width: 100%;    
-    background-color: #162631;
-    padding: 30px 0;
-}
-.fuiter{
-    color: #fff;
-    width: 50%;
-    float: left;
-    text-align: center;
-}
-@media screen and (max-width: 630px) {
-    .fuiter{
-        width: 100%;
-    }
-}
-.fuiter.right{
-    padding-top: 15px;
-    padding-left: 10px;
-}
-.fuiter.left{
-    text-align: left;
-}
-.textik{
-    text-align: center;
-    color: #666;
-}
-.footer-social-info{
-    
-}
