@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5700e8ae-ca70-49ec-a2ca-cad7dc777311" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/pages/contacts_page.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/pages/news_page.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/class/news-item.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/class/news-list.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/pages/contacts_page.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/pages/news_page.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/logo1.png" afterPath="$PROJECT_DIR$/images/logo1.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/css/page.css" afterPath="$PROJECT_DIR$/admin/css/page.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/pages/main.css" afterPath="$PROJECT_DIR$/css/pages/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/pages/main_page.js" afterPath="$PROJECT_DIR$/js/pages/main_page.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/contacts.html" afterPath="$PROJECT_DIR$/pages/contacts.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/news.html" afterPath="$PROJECT_DIR$/pages/news.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -369,7 +354,7 @@
       <workItem from="1487334184695" duration="1633000" />
       <workItem from="1487450243365" duration="18342000" />
       <workItem from="1487954873294" duration="361000" />
-      <workItem from="1488013481762" duration="31046000" />
+      <workItem from="1488013481762" duration="31107000" />
     </task>
     <task id="LOCAL-00001" summary="Correct path">
       <created>1486951040872</created>
@@ -378,11 +363,18 @@
       <option name="project" value="LOCAL" />
       <updated>1486951040872</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="News, Contacrs">
+      <created>1488052698920</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1488052698920</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="187695000" />
+    <option name="totallyTimeSpent" value="187756000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -441,7 +433,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Correct path" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correct path" />
+    <MESSAGE value="News, Contacrs" />
+    <option name="LAST_COMMIT_MESSAGE" value="News, Contacrs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
